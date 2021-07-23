@@ -6,15 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Chat app CSS illustration</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
-  Samuel Green
-  Available to Walk
+  <main class="main">
 
-  That sounds great. I’d be happy with that.
+    <div class="main__phone phone">
+      <header class="phone__header">
+        <div class="phone__icon-goback-wrap">
+          <span class="phone__phone-icon-goback fas fa-chevron-left"></span>
+        </div>
+        <div class="phone__user-avatar">
+          <img src="./images/avatar.jpg" alt="user avatar" class="phone__user-avatar-img">
+        </div>
+        <div class="phone__user-wrap">
+          <h2 class="phone__user-name">Samuel Green</h2>
+          <p class="phone__user-status">Available to Walk</p>
+        </div>
+        <div class="phone__icon-menu-wrap">
+          <span class="phone__phone-icon-menu fas fa-ellipsis-v"></span>
+        </div>
+      </header>
+      <main class="phone__main"></main>
+      <footer class="phone__footer">
+        <div class="phone__input">
+          <p class="phone__input-placeholder">Type a message…</p>
+          <div class="phone__input-btn">
+            <span class="phone__input-btn-icon fas fa-chevron-right"></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="main__info info">
+      <h1 class="info__title">Simple booking</h1>
+      <p class="info__text">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss
+        arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all
+        through the chat.</p>
+    </div>
+
+  </main>
+
+  <!-- That sounds great. I’d be happy with that.
 
   Could you send over some pictures of your dog, please?
 
@@ -28,15 +65,7 @@
   $29
 
   1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to
-  discuss arrangements and make bookings. Once the walk has been completed you can rate
-  your walker and book again all through the chat.
+  $49 -->
 
 </body>
 

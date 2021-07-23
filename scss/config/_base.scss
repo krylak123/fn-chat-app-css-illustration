@@ -1,10 +1,17 @@
-*, *::before , *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: $font-family-default;
-    font-size: $font-size-default;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $color-secondary-background-app;
 }
