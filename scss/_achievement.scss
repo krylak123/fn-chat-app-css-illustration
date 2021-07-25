@@ -1,0 +1,39 @@
+.achievement {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  padding: 9px 15px 9px 9px;
+  width: 70%;
+  color: $color-secondary-white;
+  background: linear-gradient(
+    270deg,
+    $color-gradient-violet,
+    $color-gradient-magenta
+  );
+  border-radius: 12px 12px 12px 5px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__name-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__check {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid $color-primary-text-paragraph;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 0.6rem;
+  }
+
+  &__value {
+    font-weight: bold;
+  }
+}
