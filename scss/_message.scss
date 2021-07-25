@@ -1,10 +1,11 @@
 .message {
   display: flex;
-  margin: 12px 0;
+  margin: 6px 0;
   font-size: 0.56rem;
-  &:last-child {
-    margin: 12px 0 0;
-  }
+  transform-origin: 0 100%;
+  transform: scale(0);
+  animation: chat-animation 0.15s ease-out 0s forwards;
+  animation-delay: var(--delay);
 
   &--left {
     justify-content: flex-start;

@@ -1,7 +1,7 @@
 .achievement {
   display: flex;
   justify-content: space-between;
-  margin: 12px 0;
+  margin: 6px 0;
   padding: 9px 15px 9px 9px;
   width: 70%;
   color: $color-secondary-white;
@@ -12,9 +12,10 @@
   );
   border-radius: 12px 12px 12px 5px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  transform-origin: 0 100%;
+  transform: scale(0);
+  animation: chat-animation 0.15s ease-out 0s forwards;
+  animation-delay: var(--delay);
 
   &__name-wrap {
     display: flex;

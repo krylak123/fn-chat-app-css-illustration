@@ -14,7 +14,6 @@
 <body>
 
   <main class="main">
-
     <div class="main__phone phone">
       <header class="phone__header">
         <div class="phone__icon-goback-wrap">
@@ -32,58 +31,60 @@
         </div>
       </header>
       <main class="phone__main">
-        <div class="message message--left">
-          <div class="message__left">
-            <p class="message__content">That sounds great. I’d be happy with that.</p>
-          </div>
-        </div>
-        <div class="message message--left">
-          <div class="message__left">
-            <p class="message__content">Could you send over some pictures of your dog, please?</p>
-          </div>
-        </div>
-        <div class="message message--right">
-          <div class="message__right message__right--img">
-            <div class="message__img-wrap">
-              <img src="./images/dog-image-1.jpg" alt="dog" class="message__img">
+        <div class="phone__main--container">
+          <div class="achievement" style="--delay: 15s;">
+            <div class="achievement__name-wrap">
+              <div class="achievement__check"></div>
+              <p class="achievement__name">1 hour walk</p>
             </div>
-            <div class="message__img-wrap">
-              <img src="./images/dog-image-2.jpg" alt="dog" class="message__img">
+            <p class="achievement__value">$49</p>
+          </div>
+          <div class="achievement" style="--delay: 13s;">
+            <div class="achievement__name-wrap">
+              <div class="achievement__check"></div>
+              <p class="achievement__name">30 minute walk</p>
             </div>
-            <div class="message__img-wrap">
-              <img src="./images/dog-image-3.jpg" alt="dog" class="message__img">
+            <p class="achievement__value">$29</p>
+          </div>
+          <div class="message message--left" style="--delay: 11s;">
+            <div class="message__left">
+              <p class="message__content">She looks so happy! The time we discussed works. How long shall I take her out
+                for?</p>
             </div>
           </div>
-        </div>
-        <div class="message message--right">
-          <div class="message__right">
-            <p class="message__content">Here are a few pictures. She’s a happy girl!</p>
+          <div class="message message--right" style="--delay: 9s;">
+            <div class="message__right">
+              <p class="message__content">Can you make it?</p>
+            </div>
           </div>
-        </div>
-        <div class="message message--right">
-          <div class="message__right">
-            <p class="message__content">Can you make it?</p>
+          <div class="message message--right" style="--delay: 7s;">
+            <div class="message__right">
+              <p class="message__content">Here are a few pictures. She’s a happy girl!</p>
+            </div>
           </div>
-        </div>
-        <div class="message message--left">
-          <div class="message__left">
-            <p class="message__content">She looks so happy! The time we discussed works. How long shall I take her out
-              for?</p>
+          <div class="message message--right" style="--delay: 5s;">
+            <div class="message__right message__right--img">
+              <div class="message__img-wrap">
+                <img src="./images/dog-image-1.jpg" alt="dog" class="message__img">
+              </div>
+              <div class="message__img-wrap">
+                <img src="./images/dog-image-2.jpg" alt="dog" class="message__img">
+              </div>
+              <div class="message__img-wrap">
+                <img src="./images/dog-image-3.jpg" alt="dog" class="message__img">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="achievement">
-          <div class="achievement__name-wrap">
-            <div class="achievement__check"></div>
-            <p class="achievement__name">30 minute walk</p>
+          <div class="message message--left" style="--delay: 3s;">
+            <div class="message__left">
+              <p class="message__content">Could you send over some pictures of your dog, please?</p>
+            </div>
           </div>
-          <p class="achievement__value">$29</p>
-        </div>
-        <div class="achievement">
-          <div class="achievement__name-wrap">
-            <div class="achievement__check"></div>
-            <p class="achievement__name">1 hour walk</p>
+          <div class="message message--left" style="--delay: 1s;">
+            <div class="message__left">
+              <p class="message__content">That sounds great. I’d be happy with that.</p>
+            </div>
           </div>
-          <p class="achievement__value">$49</p>
         </div>
       </main>
       <footer class="phone__footer">
@@ -95,14 +96,12 @@
         </div>
       </footer>
     </div>
-
     <div class="main__info info">
       <h1 class="info__title">Simple booking</h1>
       <p class="info__text">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss
         arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all
         through the chat.</p>
     </div>
-
   </main>
 
 </body>

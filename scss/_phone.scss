@@ -1,7 +1,10 @@
 .phone {
+  display: flex;
+  flex-direction: column;
   margin: 60px auto;
   padding: 10px;
   width: 270px;
+  height: 555px;
   background-color: $color-secondary-white;
   border-radius: 20px;
   box-shadow: 0 0 50px 0 $color-primary-text-paragraph;
@@ -86,8 +89,14 @@
   //MESSAGE AREA STYLES
 
   &__main {
+    flex-grow: 1;
     padding: 5px;
     background-color: $color-secondary-background-app;
+    &--container {
+      display: flex;
+      flex-direction: column-reverse;
+      overflow: hidden;
+    }
   }
 
   //FOOTER STYLES
@@ -107,10 +116,22 @@
   }
 
   &__input-placeholder {
+    position: relative;
     flex-grow: 1;
     display: flex;
     align-items: center;
     font-size: 0.7rem;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 1px;
+      height: 60%;
+      transform: translateY(-50%);
+      background-color: #000;
+      animation: cursor-pulse 1s infinite linear;
+    }
   }
 
   &__input-btn {
